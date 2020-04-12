@@ -1,0 +1,169 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    color: #fff;
+    background: #171919;
+}
+
+a {
+    display: inline-block;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.suptitle-line {
+    display: inline-block;
+    padding: 0 0 0 103px;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.33333px;
+    text-transform: uppercase;
+    opacity: .5;
+    position: relative;
+    &::before {
+        content:'';
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        left: 0;
+        top: 50%;
+    }  
+}
+.suptitle-line--left {
+    display: inline-block;
+    padding: 0 103px 0 0;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.33333px;
+    text-transform: uppercase;
+    opacity: .5;
+    position: relative;
+    &::before {
+        content:'';
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        right: 0;
+        top: 50%;
+    } 
+}
+
+.title {
+    span {
+        display: inline-block;
+        transform: translateX(-50px);
+        font-weight: 800;
+        font-size: 200px;
+        text-transform: uppercase;
+        color: rgba(#fff, .02);
+        position: relative;
+    }
+    h3 {
+        font-size: 80px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        position: absolute;
+        top: 10px;
+        right: -25px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 1px;
+            top: -3px;
+            right: 0;
+            background-color: #4AF6CD;
+        }
+    }
+}
+
+.section {
+    padding: 120px 0;
+}
+
+.btn {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    span {
+        padding: 17px 57px 15px 17px;
+        display: inline-block;
+        background-color: #4AF6CD;
+        margin: 0 0 0 19px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 3px;
+            background-color: #fff;
+            top: 50%;
+            left: -10px;                                       
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 21px;
+            background-image: url(/images/surf/arrow-btn.svg);
+            top: 50%;
+            right: 16px;
+            transform: translateY(-45%);
+        }
+    }
+}
+
+.quantity {
+    position: relative;
+  }
+  
+  .quantity input {
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 36px;
+    width: 37px;
+    background-color: inherit;
+    border: none;
+    color: #fff;
+    float: left;
+    display: block;
+  }
+  
+  .quantity input:focus {
+    outline: 0;
+  }
+  
+  .quantity-nav {
+    position: relative;
+    height: 50px;
+  }
+  
+  .quantity-button {
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 45px;
+  }
+  
+  .quantity-button.quantity-up {
+    position: absolute;
+    right: -130px;
+  }
+  
+  .quantity-button.quantity-down {
+    position: absolute;
+    right: -100px;
+  }
+
